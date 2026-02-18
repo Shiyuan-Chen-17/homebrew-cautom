@@ -6,7 +6,7 @@ class Cautom < Formula
   version "0.1.0"
 
   def install
-    prefix.install Dir["*"]
-    bin.install prefix/"cautom"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"cautom"
   end
 end
